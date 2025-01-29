@@ -238,3 +238,217 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
 }
+
+/* Parallax Effect for Information Page */
+.info-parallax {
+    background: url('info.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.info-parallax .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info-parallax h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.info-parallax p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Content Section for Information Page */
+.content {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content h2 {
+    text-align: center;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.content article {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Outreach Container */
+.outreach-container {
+    max-width: 800px; /* Limit the width of all content */
+    margin: 0 auto; /* Center-align the container */
+    padding: 20px; /* Add spacing for readability */
+}
+
+
+/* Box Styling */
+.box {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box img,
+.box video {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box p {
+    margin: 10px 0;
+    color: #eaeaea;
+    font-size: 14px;
+}
+
+/* Box Styling for Videos */
+.gallery .box {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery .box video {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery .box h3 {
+    margin-top: 10px;
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.gallery .box p {
+    color: #eaeaea;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* External Links Styling */
+.external-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.external-links a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #f1c40f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.external-links a:hover {
+    background-color: #f1c40f;
+    color: #2c2c2c;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center items in the row */
+    gap: 20px; /* Reduce the gap between items */
+    margin-top: 20px; /* Add spacing above the gallery */
+}
+
+/* Box Styling */
+.gallery .box {
+    width: 300px; /* Box width */
+    margin: 0; /* Remove additional margins */
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery .box video {
+    width: 100%; /* Video stretches to fill the box */
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery .box h3 {
+    margin-top: 10px;
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.gallery .box p {
+    color: #eaeaea;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Text Interview Styling */
+.interview {
+    background: #2c2c2c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.interview h3 {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.interview p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.interview .question {
+    color: #f1c40f; /* Highlight the questions in yellow */
+    font-weight: bold;
+}
