@@ -1,0 +1,492 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #1f1f1f; /* Dark Gray Background */
+    color: #eaeaea; /* Light Text Color */
+}
+
+nav {
+    background-color: rgba(50, 50, 50, 0.9); /* Darker Nav Background */
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #eaeaea; /* Light Nav Text */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Golden Yellow on Hover */
+}
+
+/* Parallax Effect */
+.parallax {
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f1f1f1; /* Light Text in Overlay */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Dark Overlay */
+    animation: fadeIn 2s ease;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Mission Section */
+.mission {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.mission-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.mission-highlights div {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 300px;
+}
+
+.mission-highlights div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mission-highlights h3 {
+    color: #f1c40f;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.mission-highlights p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Team Section */
+.team-section {
+    background-color: #1e1e1e;
+    color: #eaeaea;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 30px;
+}
+
+.team-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-card {
+    background: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #eaeaea;
+}
+/* General Styles for Centered Content */
+.gallery-section, .videos-section, .external-links {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-section h2, .videos-section h2, .external-links h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.gallery-section p, .videos-section p, .external-links p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #eaeaea;
+}
+
+/* YouTube Link Hover Effect */
+.hover-link {
+    font-size: 1.2rem;
+    color: #f1c40f;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #f1c40f;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.hover-link:hover {
+    background-color: #f1c40f;
+    color: #1e1e1e;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Align Gallery and Videos Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Parallax Effect for Information Page */
+.info-parallax {
+    background: url('info.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.info-parallax .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info-parallax h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.info-parallax p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Content Section for Information Page */
+.content {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content h2 {
+    text-align: center;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.content article {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Outreach Container */
+.outreach-container {
+    max-width: 800px; /* Limit the width of all content */
+    margin: 0 auto; /* Center-align the container */
+    padding: 20px; /* Add spacing for readability */
+}
+
+
+/* Box Styling */
+.box {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box img,
+.box video {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box p {
+    margin: 10px 0;
+    color: #eaeaea;
+    font-size: 14px;
+}
+
+/* Box Styling for Videos */
+.gallery .box {
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery .box video {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery .box h3 {
+    margin-top: 10px;
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.gallery .box p {
+    color: #eaeaea;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* External Links Styling */
+.external-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.external-links a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #f1c40f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.external-links a:hover {
+    background-color: #f1c40f;
+    color: #2c2c2c;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center items in the row */
+    gap: 20px; /* Reduce the gap between items */
+    margin-top: 20px; /* Add spacing above the gallery */
+}
+
+/* Box Styling */
+.gallery .box {
+    width: 300px; /* Box width */
+    margin: 0; /* Remove additional margins */
+    padding: 10px;
+    background: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery .box video {
+    width: 100%; /* Video stretches to fill the box */
+    border-radius: 10px 10px 0 0;
+}
+
+.gallery .box h3 {
+    margin-top: 10px;
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.gallery .box p {
+    color: #eaeaea;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Text Interview Styling */
+.interview {
+    background: #2c2c2c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.interview h3 {
+    color: #f1c40f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.interview p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.interview .question {
+    color: #f1c40f; /* Highlight the questions in yellow */
+    font-weight: bold;
+}
+
+/* Instagram Post Boxes */
+.instagram-box {
+    background: #2c2c2c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-box h3 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+.instagram-box p {
+    color: #eaeaea;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Instagram Post Images */
+.instagram-box img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
