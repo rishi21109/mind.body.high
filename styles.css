@@ -452,3 +452,41 @@ nav a:hover {
     color: #f1c40f; /* Highlight the questions in yellow */
     font-weight: bold;
 }
+
+/* Instagram Post Boxes */
+.instagram-box {
+    background: #2c2c2c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-box h3 {
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+.instagram-box p {
+    color: #eaeaea;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Instagram Post Images */
+.instagram-box img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
